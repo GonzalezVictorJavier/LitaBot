@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
     <SurfaceView
         android:id="@+id/surfaceView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
         />
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capture"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/anotherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take another"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp"
+        tools:ignore="HardcodedText"
+        android:visibility="gone"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
